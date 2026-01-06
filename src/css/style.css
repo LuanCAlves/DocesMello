@@ -46,6 +46,11 @@
     transform: translateX(0%);
 }
 
+.nav-links li{
+    width: 100%;
+    text-align: center;
+}
+
 
 /* Configurações do Menu Toggle*/
 .menu-toggle{
@@ -85,5 +90,31 @@
 }
 
 .no-scroll {
-    overflow: hidden;
+    overflow-y: hidden;
+}
+
+
+/* Estilização do Scroll lateral */
+/* 1. Largura e altura da barra */
+::-webkit-scrollbar {
+  width: 12px;               /* Largura da barra vertical */
+  height: 12px;              /* Altura da barra horizontal */
+}
+
+/* 2. O trilho (fundo da barra) */
+::-webkit-scrollbar-track {
+  background: #e0f7fa;       /* Um azul bem clarinho para combinar com o fundo */
+  border-radius: 10px;
+}
+
+/* 3. O "Thumb" (a parte que você arrasta) */
+::-webkit-scrollbar-thumb {
+  background: #ff4081;       /* Rosa vibrante como os doces da imagem */
+  border-radius: 20px;       /* Bordas bem arredondadas */
+  border: 3px solid #e0f7fa; /* Cria uma margem para parecer que a barra flutua */
+}
+
+/* 4. Efeito ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: #f50057;       /* Um rosa um pouco mais escuro ao interagir */
 }

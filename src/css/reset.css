@@ -14,4 +14,10 @@ body{
     background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
+}
+
+html {
+  /* Reserva o espaço da barra mesmo quando ela some */
+  scrollbar-gutter: stable;
 }
