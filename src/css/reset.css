@@ -1,0 +1,17 @@
+*{
+    list-style: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

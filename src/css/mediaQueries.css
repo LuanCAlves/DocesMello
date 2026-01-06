@@ -1,0 +1,30 @@
+@media screen and (min-width: 768px){
+    .navbar{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .content-logo{
+        justify-self: center;
+    }
+
+    .menu-toggle{
+        display: none;
+    }
+
+    .nav-links {
+        position: static;
+        height: auto;
+        width: auto;
+        flex-direction: row;
+        transform: translateX(0);
+        background: transparent;
+    }
+
+    .nav-links.glass-container{
+        background: transparent;
+        border: none;
+        backdrop-filter: none;
+        box-shadow: none;
+    }
+}
