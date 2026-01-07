@@ -7,15 +7,12 @@
 }
 
 body{
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: url("../img/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    min-height: 100vh;
     overflow-x: hidden;
+    overflow-y: overlay;
+    background: transparent;
 }
+
 
 html {
   /* Reserva o espaço da barra mesmo quando ela some */

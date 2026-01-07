@@ -1,7 +1,7 @@
 @media screen and (min-width: 768px){
     .navbar{
-        display: block;
-        margin: 0 auto;
+        flex-direction: column;
+        margin: 1rem auto;
     }
 
     .content-logo{
@@ -13,18 +13,68 @@
     }
 
     .nav-links {
-        position: static;
-        height: auto;
-        width: auto;
+        position: relative;
+        height: 100%;
+        width: 100%;
         flex-direction: row;
         transform: translateX(0);
-        background: transparent;
+        justify-content: space-evenly;
+        gap: 0;
     }
 
     .nav-links.glass-container{
-        background: transparent;
+        background: #ff4081;
         border: none;
         backdrop-filter: none;
         box-shadow: none;
+    }
+
+    .nav-links li{
+        min-width: fit-content;
+        max-width: 13%;
+    }
+
+}
+
+
+/* Telas Maiores que 1024px*/
+@media screen and (min-width: 1024px){
+    .nav-links{
+        width: 90%;
+    }
+}
+
+
+/* Telas Maiores que 1250px*/
+@media screen and (min-width: 1250px){
+    .nav-links{
+        width: 80%;
+    }
+}
+
+
+/* Telas Maiores que 1650px*/
+@media screen and (min-width: 1650px){
+    .nav-links{
+        width: 70%;
+    }
+}
+
+
+/* Ajuste da Barra de Pesquisa para mobile */
+@media (max-width: 480px) {
+    .search-button span {
+        display: none; /* Esconde o texto "Pesquisar" no celular, deixa só o ícone */
+    }
+
+    .search-button {
+        padding: 10px 15px;
+    }
+
+    .search-suggestions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
     }
 }

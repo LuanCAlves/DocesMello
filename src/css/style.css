@@ -1,9 +1,19 @@
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("../img/bg-doces.jpg") center / cover no-repeat;
+    z-index: -1;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     position: relative;
+    max-width: 90%;
+    margin: .5rem auto;
 }
 
 .content-logo{
@@ -28,7 +38,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 10px;
 
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
@@ -39,7 +49,7 @@
 }
 
 .nav-links.glass-container{
-    background: rgba(150,150,200,.90);
+    background: #ff4081;
 }
 
 .nav-links.nav-active {
@@ -47,8 +57,23 @@
 }
 
 .nav-links li{
-    width: 100%;
+    width: 80%;
     text-align: center;
+    padding: 5px;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    transition: all .3s ease-in-out;
+}
+
+.nav-links li:hover,
+.nav-links li:focus-within{
+    background-color: #f50057;
+    border: 2px solid white;
+    transform: scale(1.05);
+}
+
+.nav-links li a{
+    display: block;
 }
 
 
@@ -94,27 +119,78 @@
 }
 
 
-/* Estilização do Scroll lateral */
-/* 1. Largura e altura da barra */
-::-webkit-scrollbar {
-  width: 12px;               /* Largura da barra vertical */
-  height: 12px;              /* Altura da barra horizontal */
+/* Estilização da Barra de Persquisa (Search) */
+.search-section {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: rgb(246, 251, 255, 1);
 }
 
-/* 2. O trilho (fundo da barra) */
-::-webkit-scrollbar-track {
-  background: #e0f7fa;       /* Um azul bem clarinho para combinar com o fundo */
-  border-radius: 10px;
+.search-container {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-/* 3. O "Thumb" (a parte que você arrasta) */
-::-webkit-scrollbar-thumb {
-  background: #ff4081;       /* Rosa vibrante como os doces da imagem */
-  border-radius: 20px;       /* Bordas bem arredondadas */
-  border: 3px solid #e0f7fa; /* Cria uma margem para parecer que a barra flutua */
+.search-form {
+    display: flex;
+    width: 100%;
+    max-width: 600px; /* Limita a largura em telas grandes */
+    background: white;
+    border-radius: 50px; /* Bem arredondado para o estilo "soft" */
+    padding: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 2px solid #ff7eb3; /* Borda rosa fina */
 }
 
-/* 4. Efeito ao passar o mouse */
-::-webkit-scrollbar-thumb:hover {
-  background: #f50057;       /* Um rosa um pouco mais escuro ao interagir */
+.search-input {
+    flex: 1; /* Faz o input ocupar todo o espaço disponível */
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    border-radius: 50px 0 0 50px;
+    outline: none;
+}
+
+.search-button {
+    display: flex;
+    background-color: #ff4081; /* Rosa vibrante */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    gap: 7px;
+    align-items: center;
+}
+
+.search-button:hover {
+    background-color: #f50057;
+}
+
+/* Configurações de Sugestões de Pesquisas */
+.search-suggestions {
+    margin-top: 12px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.search-suggestions span {
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.search-suggestions a {
+    color: #ff4081; /* Rosa da Doces Mello */
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.search-suggestions a:hover {
+    color: #f50057;
+    text-decoration: underline;
 }

@@ -9,19 +9,23 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!-- Icon da Página --> 
 
         <!-- Importação de Arquivos Css -->
-        <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="./src/css/reset.css"> <!-- Css Reset -->
         <link rel="stylesheet" href="./src/css/style.css"> <!-- Folha de Estilização -->
         <link rel="stylesheet" href="./src/css/glass.css"> <!-- Efeito Glass -->
-        <link rel="stylesheet" href="./src/css/reset.css"> <!-- Css Reset -->
         <link rel="stylesheet" href="./src/css/mediaQueries.css"> <!-- Media Querie -->
+        <link rel="stylesheet" href="./src/css/scrollBar.css">
 
         <!-- Importação de Fontes -->
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
         </style>
 
+        <!-- Importação Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     </head>
     <body>
+        <!-- Inicio do Cabeçalho -->
         <header>
             <nav class="navbar glass-container">
                 <div class="content-logo">
@@ -44,6 +48,29 @@
                 </ul>
             </nav>
         </header>
+        <!-- Fim do Cabeçalho -->
+        
+        <!-- Inicio da Barra de Pesquisa (Search) -->
+        <section class="search-section">
+            <div class="search-container">
+                <form action="/search" method="GET" class="search-form">
+                    <input type="text" placeholder="O que você procura hoje? 🍬" aria-label="Pesquisar delicias" class="search-input">
+                    <button type="submit" class="search-button">
+                        <i class="fa-solid fa-search"></i><span>Pesquisar</span>
+                    </button>
+                </form>
+
+                <div class="search-suggestions">
+                    <span>Populares:</span>
+                    <a href="#">Copo da Felicidade</a>
+                    <a href="#">Balas</a>
+                    <a href="#">Bolos & Brownies</a>
+                    <a href="#">Doces Caseirinhos</a>
+                </div>
+            </div>
+        </section>
+        <!-- Fim da Barra de Pesquisa (Search) -->
+
 
         <script src="./src/js/script.js"></script>
     </body>
