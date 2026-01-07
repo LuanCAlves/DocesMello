@@ -1,16 +1,16 @@
 *{
-    list-style: none;
-    color: black;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+  list-style: none;
+  color: black;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 body{
-    min-height: 100vh;
-    overflow-x: hidden;
-    overflow-y: overlay;
-    background: transparent;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: overlay;
+  background: transparent;
 }
 
 

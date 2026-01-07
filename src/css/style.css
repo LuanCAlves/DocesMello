@@ -3,7 +3,7 @@ body::before {
     position: fixed;
     inset: 0;
     background: url("../img/bg-doces.jpg") center / cover no-repeat;
-    z-index: -1;
+    z-index: -10;
 }
 
 .navbar{
@@ -14,6 +14,7 @@ body::before {
     position: relative;
     max-width: 90%;
     margin: .5rem auto;
+    z-index: 11;
 }
 
 .content-logo{
@@ -195,17 +196,19 @@ body::before {
     text-decoration: underline;
 }
 
-/* Estilização Carrosel de Banner */
-.carrosel-section{
+/* Estilização carrossel de Banner */
+.carrossel-section{
     display: flex;
     max-width: 90%;
-    justify-items: center;
+    justify-content: center;
     margin: .5rem auto;
     padding: 1rem 2rem;
     overflow: hidden;
+    z-index: 0;
+    position: relative;
 }
 
-.carrosel-container{
+.carrossel-container{
     width: 100%;
     max-width: 800px;
     height: 400px;
@@ -221,7 +224,7 @@ input[type=radio]{
 }
 
 .cards{
-    position: relative;
+    position: static;
     width: 100%;
     height: 100%;
 }
@@ -240,6 +243,11 @@ input[type=radio]{
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
+.card:hover{
+    filter: brightness(1.1);
+    transform: scale(1.02);
+}
+
 .banner-text{
     position: absolute;
     bottom: 20px;
@@ -251,7 +259,7 @@ input[type=radio]{
     border-radius: 15px;
     color: white;
     font-family: 'Quicksand', sans-serif;
-    border: 1px solid rgba(255,255,255,.3,);
+    border: 1px solid rgba(255,255,255,.3);
 }
 
 .banner{
@@ -261,7 +269,7 @@ input[type=radio]{
     background-repeat: no-repeat;
 }
 
-/* Lógica de Movimentação do Carrosel */
+/* Lógica de Movimentação do carrossel */
 #item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
     transform: translateX(-40%) scale(.8);
     opacity: .4;
@@ -279,3 +287,17 @@ input[type=radio]{
     opacity: 1;
     z-index: 1;
 }
+
+/* Estilização Cards Mais Vendidos*/
+.mais-vendidos{
+    margin: 0 auto;
+    width: 90%;
+    justify-items: center;
+    gap: 10px;
+}
+
+.produto{
+    max-width: 250px;
+}
+
+
