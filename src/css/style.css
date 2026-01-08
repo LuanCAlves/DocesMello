@@ -100,7 +100,7 @@ body::before {
 }
 
 .menu-toggle.open{
-    z-index: 9999;
+    z-index: 20;
 }
 
 .menu-toggle.open .bar:nth-child(1){
@@ -459,4 +459,85 @@ input[type=radio]{
 .add-to-cart-btn:hover {
     background-color: #f50057;
     box-shadow: 0 6px 15px rgba(245, 0, 87, 0.4);
+}
+
+
+/* ================= Botão Flutuante Carrinho de Compra ================*/
+.cart-floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #ff4081; /* Rosa Doces Mello */
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-floating-btn:hover{
+    background-color: #f50057;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #f50057;
+    font-size: 0.8rem;
+    padding: 3px 8px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* Modal do Carrinho */
+.cart-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: none; /* Escondido por padrão */
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    padding: 20px;
+}
+
+.cart-content {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.8) !important; /* Glassmorphism */
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+}
+
+.checkout-btn {
+    width: 100%;
+    background-color: #25d366; /* Verde WhatsApp */
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50px; /* Estilo pílula */
+    font-weight: 700;
+    margin-top: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }

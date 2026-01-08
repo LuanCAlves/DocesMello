@@ -6,7 +6,7 @@
 
         <!-- Configurações da Página -->
         <title>Doces Mello</title> <!-- Titulo da Página -->
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!-- Icon da Página --> 
+        <link rel="shortcut icon" href="./src/img/icon.png" type="image/x-icon"> <!-- Icon da Página --> 
 
         <!-- Importação de Arquivos Css -->
         <link rel="stylesheet" href="./src/css/reset.css"> <!-- Css Reset -->
@@ -40,11 +40,11 @@
 
                 <ul class="nav-links glass-container">
                     <li><a href="#mais-vendidos">Mais Vendidos</a></li>
-                    <li><a href="#">Novidades</a></li>
-                    <li><a href="#">Promoções</a></li>
-                    <li><a href="#">Quem Somos</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">Depoimentos</a></li>
+                    <li><a href="#novidades">Novidades</a></li>
+                    <li><a href="#promocao">Promoções</a></li>
+                    <li><a href="#quem-somos">Quem Somos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
                 </ul>
             </nav>
         </header>
@@ -129,7 +129,7 @@
                                 <img src="./src/img/produto-1.png" alt="Copa da Felicidade" class="product-img"></img>
                                 <h3 class="product-title">COPO DOS SONHOS</h3>
                                 <span class="product-price">R$ 25,73</span>
-                                <button class="add-to-cart-btn" aria-label="Adicionar ao carrinho">
+                                <button class="add-to-cart-btn" onclick="addToCart('Doce de Leite', 25.73)" aria-label="Adicionar ao carrinho">
                                     <i class="fas fa-cart-plus"></i>
                                 </button>
                                 
@@ -138,7 +138,7 @@
                                 <img src="./src/img/produto-1.png" alt="Copa da Felicidade" class="product-img"></img>
                                 <h3 class="product-title">COPO DOS SONHOS</h3>
                                 <span class="product-price">R$ 25,73</span>
-                                <button class="add-to-cart-btn" aria-label="Adicionar ao carrinho">
+                                <button class="add-to-cart-btn" onclick="addToCart('Doce de Leite', 25.73)" aria-label="Adicionar ao carrinho">
                                     <i class="fas fa-cart-plus"></i>
                                 </button>
                             </div>
@@ -146,7 +146,7 @@
                                 <img src="./src/img/produto-1.png" alt="Copa da Felicidade" class="product-img"></img>
                                 <h3 class="product-title">COPO DOS SONHOS</h3>
                                 <span class="product-price">R$ 25,73</span>
-                                <button class="add-to-cart-btn" aria-label="Adicionar ao carrinho">
+                                <button class="add-to-cart-btn" onclick="addToCart('Doce de Leite', 25.73)" aria-label="Adicionar ao carrinho">
                                     <i class="fas fa-cart-plus"></i>
                                 </button>
                             </div>
@@ -158,9 +158,132 @@
                 </section>
                 <!-- Fim Seção Mais Vendidos -->
 
+                <!-- Inicio Seção Novidades -->
+                <section class="products-section" id="novidades">
+                    <div class="section-header">
+                        <div class="products-header">
+                            <hr></hr>
+                            <h2>NOVIDADES DO MOMENTO</h2>
+                            <hr></hr>
+                        </div>
+                        <p class="products-subtitle">Venha conferir!!</p>
+                    </div>
+                    
+
+                    <div class="products-container-wrapper">
+                        <button class="nav-arrow left" aria-label="Anterior">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="products-grid" id="productsGrid">
+                            <div class="product-card glass-container">
+                                <img src="./src/img/produto-1.png" alt="Copa da Felicidade" class="product-img"></img>
+                                <h3 class="product-title">COPO DOS SONHOS</h3>
+                                <span class="product-price">R$ 25,73</span>
+                                <button class="add-to-cart-btn" onclick="addToCart('Doce de Leite', 25.73)" aria-label="Adicionar ao carrinho">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                                
+                            </div>
+                            <div class="product-card glass-container">
+                                <img src="./src/img/produto-1.png" alt="Copa da Felicidade" class="product-img"></img>
+                                <h3 class="product-title">COPO DOS SONHOS</h3>
+                                <span class="product-price">R$ 25,73</span>
+                                <button class="add-to-cart-btn" onclick="addToCart('Doce de Leite', 25.73)" aria-label="Adicionar ao carrinho">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                            <div class="product-card glass-container">
+                                <img src="./src/img/produto-1.png" alt="Copa da Felicidade" class="product-img"></img>
+                                <h3 class="product-title">COPO DOS SONHOS</h3>
+                                <span class="product-price">R$ 25,73</span>
+                                <button class="add-to-cart-btn" onclick="addToCart('Doce de Leite', 25.73)" aria-label="Adicionar ao carrinho">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <button class="nav-arrow right" aria-label="Próximo">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </section>
+                <!-- Fim Seção Novidades -->
+
+                <!-- Inicio Seção Promocionais -->
+                <section class="products-section" id="promocao">
+                    <div class="section-header">
+                        <div class="products-header">
+                            <hr></hr>
+                            <h2>PRODUTOS EM PROMOÇÃO</h2>
+                            <hr></hr>
+                        </div>
+                        <p class="products-subtitle">Olha essas gostosuras😍</p>
+                    </div>
+                    
+
+                    <div class="products-container-wrapper">
+                        <button class="nav-arrow left" aria-label="Anterior">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="products-grid" id="productsGrid">
+                            <div class="product-card glass-container">
+                                <img src="./src/img/produto-1.png" alt="Copa da Felicidade" class="product-img"></img>
+                                <h3 class="product-title">COPO DOS SONHOS</h3>
+                                <span class="product-price">R$ 25,73</span>
+                                <button class="add-to-cart-btn" onclick="addToCart('Doce de Leite', 25.73)" aria-label="Adicionar ao carrinho">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                                
+                            </div>
+                            <div class="product-card glass-container">
+                                <img src="./src/img/produto-1.png" alt="Copa da Felicidade" class="product-img"></img>
+                                <h3 class="product-title">COPO DOS SONHOS</h3>
+                                <span class="product-price">R$ 25,73</span>
+                                <button class="add-to-cart-btn" onclick="addToCart('Doce de Leite', 25.73)" aria-label="Adicionar ao carrinho">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                            <div class="product-card glass-container">
+                                <img src="./src/img/produto-1.png" alt="Copa da Felicidade" class="product-img"></img>
+                                <h3 class="product-title">COPO DOS SONHOS</h3>
+                                <span class="product-price">R$ 25,73</span>
+                                <button class="add-to-cart-btn" onclick="addToCart('Doce de Leite', 25.73)" aria-label="Adicionar ao carrinho">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <button class="nav-arrow right" aria-label="Próximo">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </section>
+                <!-- Fim Seção Promocionais -->
+
             </div>
         </main>
 
         <script src="./src/js/script.js"></script>
     </body>
+
+    <button class="cart-floating-btn" id="openCart">
+        <i class="fas fa-shopping-basket"></i>
+        <span class="cart-count">0</span>
+    </button>
+
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content glass-container">
+            <div class="cart-header">
+                <h3>Seu Carrinho 🍬</h3>
+                <button id="closeCart">&times;</button>
+            </div>
+            <div id="cartItems" class="cart-items-list">
+                <p>Seu carrinho está vazio...</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">Total: <span id="cartTotalValue">R$ 0,00</span></div>
+                <button class="checkout-btn" id="sendWhatsApp">
+                    <i class="fab fa-whatsapp"></i> Realizar Pedido
+                </button>
+            </div>
+        </div>
+    </div>
 </html>

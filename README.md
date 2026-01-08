@@ -1,5 +1,7 @@
 # 🍬 Doces Mello
 
+* **Página em Desenvolvimento!**
+
 Uma Pagina moderna, responsiva e de alta conversão desenvolvida para a **Doces Mello**, que oferece seus irresisteveis doces, preparados com amor e carinho. 💙
 
 ## 🚀 Tecnologias Utilizadas
