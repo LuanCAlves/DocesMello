@@ -262,28 +262,27 @@
         </main>
 
         <script src="./src/js/script.js"></script>
-    </body>
+        <button class="cart-floating-btn" id="openCart">
+            <i class="fas fa-shopping-basket"></i>
+            <span class="cart-count">0</span>
+        </button>
 
-    <button class="cart-floating-btn" id="openCart">
-        <i class="fas fa-shopping-basket"></i>
-        <span class="cart-count">0</span>
-    </button>
-
-    <div class="cart-modal" id="cartModal">
-        <div class="cart-content glass-container">
-            <div class="cart-header">
-                <h3>Seu Carrinho 🍬</h3>
-                <button id="closeCart">&times;</button>
-            </div>
-            <div id="cartItems" class="cart-items-list">
-                <p>Seu carrinho está vazio...</p>
-            </div>
-            <div class="cart-footer">
-                <div class="cart-total">Total: <span id="cartTotalValue">R$ 0,00</span></div>
-                <button class="checkout-btn" id="sendWhatsApp">
-                    <i class="fab fa-whatsapp"></i> Realizar Pedido
-                </button>
+        <div class="cart-modal" id="cartModal">
+            <div class="cart-content glass-container">
+                <div class="cart-header">
+                    <h3>Seu Carrinho 🍬</h3>
+                    <button id="closeCart">&times;</button>
+                </div>
+                <div id="cartItems" class="cart-items-list">
+                    <p>Seu carrinho está vazio...</p>
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-total">Total: <span id="cartTotalValue">R$ 0,00</span></div>
+                    <button class="checkout-btn" id="sendWhatsApp">
+                        <i class="fab fa-whatsapp"></i> Realizar Pedido
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
+    </body>
 </html>
