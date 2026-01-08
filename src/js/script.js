@@ -45,3 +45,16 @@ document.querySelectorAll('input[name="slider"]').forEach((radio, index) => {
         count = index + 1;
     });
 });
+
+// Animação das setas na seção MAIS VENDIDOS
+const grid = document.getElementById('productsGrid');
+const btnLeft = document.querySelector('.nav-arrow.left');
+const btnRight = document.querySelector('.nav-arrow.right');
+
+btnRight.addEventListener('click', () => {
+    if(screen >= 500)grid.scrollLeft += 283; else grid.scrollLeft += 243; // Valor aproximado da largura do card + gap
+});
+
+btnLeft.addEventListener('click', () => {
+    if(screen >= 500)grid.scrollLeft -= 283; else grid.scrollLeft -= 243;
+});

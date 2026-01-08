@@ -10,8 +10,8 @@
 
         <!-- Importação de Arquivos Css -->
         <link rel="stylesheet" href="./src/css/reset.css"> <!-- Css Reset -->
-        <link rel="stylesheet" href="./src/css/style.css"> <!-- Folha de Estilização -->
         <link rel="stylesheet" href="./src/css/glass.css"> <!-- Efeito Glass -->
+        <link rel="stylesheet" href="./src/css/style.css"> <!-- Folha de Estilização -->
         <link rel="stylesheet" href="./src/css/mediaQueries.css"> <!-- Media Querie -->
         <link rel="stylesheet" href="./src/css/scrollBar.css">
 
@@ -39,7 +39,7 @@
                 </button>
 
                 <ul class="nav-links glass-container">
-                    <li><a href="#">Mais Vendidos</a></li>
+                    <li><a href="#mais-vendidos">Mais Vendidos</a></li>
                     <li><a href="#">Novidades</a></li>
                     <li><a href="#">Promoções</a></li>
                     <li><a href="#">Quem Somos</a></li>
@@ -71,56 +71,95 @@
         </section>
         <!-- Fim da Barra de Pesquisa (Search) -->
 
-        <!-- Inicio Carrossel Banners -->
-        <section class="carrossel-section">
-            <div class="carrossel-container glass-container">
-                <input type="radio" name="slider" id="item-1" checked>
-                <input type="radio" name="slider" id="item-2">
-                <input type="radio" name="slider" id="item-3">
+        <main class="main">
+            <div class="main-container glass-container">
+                <!-- Inicio Carrossel Banners -->
+                <section class="carrossel-section">
+                    <div class="carrossel-container">
+                        <input type="radio" name="slider" id="item-1" checked>
+                        <input type="radio" name="slider" id="item-2">
+                        <input type="radio" name="slider" id="item-3">
 
-                <div class="cards">
-                    <label class="card" for="item-1" id="song-1">
-                        <img src="./src/img/banner-1.png" alt="Banner" class="banner">
-                        <div class="banner-text">
-                            <h2>Copo da Felicidade</h2>
-                            <p>Peça já o seu combo!</p>
+                        <div class="cards">
+                            <label class="card" for="item-1" id="song-1">
+                                <img src="./src/img/banner-1.png" alt="Banner" class="banner">
+                                <div class="banner-text">
+                                    <h2>Copo da Felicidade</h2>
+                                    <p>Peça já o seu combo!</p>
+                                </div>
+                            </label>
+                            <label class="card" for="item-2" id="song-2">
+                                <img src="./src/img/banner-2.png" alt="Banner" class="banner">
+                                <div class="banner-text">
+                                    <h2>Morango do Amor</h2>
+                                    <p>Sabor que derrete na boca!</p>
+                                </div>
+                            </label>
+                            <label class="card" for="item-3" id="song-3">
+                                <img src="./src/img/banner-3.png" alt="Banner" class="banner">
+                                <div class="banner-text">
+                                    <h2>Novidades de Verão</h2>
+                                    <p>Confira nossos Sabores!</p>
+                                </div>
+                            </label>
                         </div>
-                    </label>
-                    <label class="card" for="item-2" id="song-2">
-                        <img src="./src/img/banner-2.png" alt="Banner" class="banner">
-                        <div class="banner-text">
-                            <h2>Morango do Amor</h2>
-                            <p>Sabor que derrete na boca!</p>
+                        
+                    </div>
+                </section>
+                <!-- Fim Carrossel Banners -->
+
+                <!-- Inicio Seção Mais Vendidos -->
+                <section class="products-section" id="mais-vendidos">
+                    <div class="section-header">
+                        <div class="products-header">
+                            <hr></hr>
+                            <h2>PRODUTOS MAIS VENDIDOS</h2>
+                            <hr></hr>
                         </div>
-                    </label>
-                    <label class="card" for="item-3" id="song-3">
-                        <img src="./src/img/banner-3.png" alt="Banner" class="banner">
-                        <div class="banner-text">
-                            <h2>Novidades de Verão</h2>
-                            <p>Confira nossos Sabores!</p>
+                        <p class="products-subtitle">Escolha o seu favorito</p>
+                    </div>
+                    
+
+                    <div class="products-container-wrapper">
+                        <button class="nav-arrow left" aria-label="Anterior">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="products-grid" id="productsGrid">
+                            <div class="product-card glass-container">
+                                <img src="./src/img/produto-1.png" alt="Copa da Felicidade" class="product-img"></img>
+                                <h3 class="product-title">COPO DOS SONHOS</h3>
+                                <span class="product-price">R$ 25,73</span>
+                                <button class="add-to-cart-btn" aria-label="Adicionar ao carrinho">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                                
+                            </div>
+                            <div class="product-card glass-container">
+                                <img src="./src/img/produto-1.png" alt="Copa da Felicidade" class="product-img"></img>
+                                <h3 class="product-title">COPO DOS SONHOS</h3>
+                                <span class="product-price">R$ 25,73</span>
+                                <button class="add-to-cart-btn" aria-label="Adicionar ao carrinho">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                            <div class="product-card glass-container">
+                                <img src="./src/img/produto-1.png" alt="Copa da Felicidade" class="product-img"></img>
+                                <h3 class="product-title">COPO DOS SONHOS</h3>
+                                <span class="product-price">R$ 25,73</span>
+                                <button class="add-to-cart-btn" aria-label="Adicionar ao carrinho">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
                         </div>
-                    </label>
-                </div>
-                
-            </div>
-        </section>
-        <!-- Fim Carrossel Banners -->
+                        <button class="nav-arrow right" aria-label="Próximo">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </section>
+                <!-- Fim Seção Mais Vendidos -->
 
-        <!-- Inicio Seção Mais Vendidos -->
-        <section class="mais-vendidos glass-container">
-            <div class="liner-continer">
-                <h2 class="title-section">Mais Vendidos</h2>
             </div>
-
-            <div class="section-produtos">
-                <label for="" class="produto-card">
-                    <img src="./src/img/produto-1.png" alt="Imagem do Produto" class="produto">
-                    <p class="produto-text">O Maguinifico Copo dos Sonhos</p>
-                </label>
-            </div>
-        </section>
-        <!-- Fim Seção Mais Vendidos -->
-
+        </main>
 
         <script src="./src/js/script.js"></script>
     </body>

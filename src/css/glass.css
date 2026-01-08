@@ -1,5 +1,5 @@
 .glass-container {
-  background: rgba(100, 100, 100, 0.1); /* Fundo branco quase transparente */
+  background: rgba(255, 255, 255, 0.3); /* Fundo branco quase transparente */
   backdrop-filter: blur(3px);          /* Efeito de vidro desfocado */
   -webkit-backdrop-filter: blur(5px);  /* Para compatibilidade com Safari */
   border-radius: 15px;                  /* Cantos arredondados */

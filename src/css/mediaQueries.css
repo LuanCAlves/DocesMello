@@ -1,3 +1,21 @@
+/* Ajuste da Barra de Pesquisa para mobile */
+@media screen and (min-width: 480px) {
+    .search-button span {
+        display: inline;
+    }
+
+    .search-button {
+        padding: 10px 20px;
+    }
+
+    .search-suggestions {
+        display: inline;
+        flex-wrap: none;
+        justify-content: none;
+        gap: 0;
+    }
+}
+
 @media screen and (min-width: 768px){
     .navbar{
         flex-direction: column;
@@ -36,7 +54,11 @@
 
     .carrossel-container{
         margin: 0 auto;
-        height: 800px;
+        height: 650px;
+    }
+
+    .card {
+        width: 55%;
     }
 
 }
@@ -67,21 +89,3 @@
     }
 }
 
-
-/* Ajuste da Barra de Pesquisa para mobile */
-@media (max-width: 480px) {
-    .search-button span {
-        display: none; /* Esconde o texto "Pesquisar" no celular, deixa só o ícone */
-    }
-
-    .search-button {
-        padding: 10px 15px;
-    }
-
-    .search-suggestions {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 8px;
-    }
-}
